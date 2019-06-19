@@ -1,1 +1,7 @@
-Temp
+Python Short Notes:
+
+Quick Reference:
+
+List - index level operation - List comprehension 
+enumerate keyword - used for taking the index and keyword of a list, Tuples (Not used for Sets and Dictionaries)
+
