@@ -1,7 +1,113 @@
 Python Short Notes:
 
-Quick Reference:
+                    Quick Reference:
 
 List - index level operation - List comprehension 
 enumerate keyword - used for taking the index and keyword of a list, Tuples (Not used for Sets and Dictionaries)
+
+                          String: 
+Title
+name = "ada lovelace"
+print(name.title())
+Save this file as name.py, and then run it. You should see this output:
+Ada Lovelace
+
+name = "Ada Lovelace"
+print(name.upper())
+print(name.lower())
+
+              Removing empty spaces in a string
+
+>>> favorite_language = ' python '
+v >>> favorite_language.rstrip()
+' python'
+w >>> favorite_language.lstrip()
+'python '
+x >>> favorite_language.strip()
+'python'
+
+              Modifying Elements in a List
+
+motorcycles = ['honda', 'yamaha', 'suzuki']
+print(motorcycles)
+motorcycles[0] = 'ducati'
+print(motorcycles)
+
+              Adding Elements to a List
+              
+
+motorcycles = ['honda', 'yamaha', 'suzuki']
+print(motorcycles)
+motorcycles.append('ducati')
+print(motorcycles)
+The append() method at u adds 'ducati' to the end of the list without
+affecting any of the other elements in the list:
+['honda', 'yamaha', 'suzuki']
+['honda', 'yamaha', 'suzuki', 'ducati']
+
+            Inserting Elements into a List
+
+
+motorcycles = ['honda', 'yamaha', 'suzuki']
+motorcycles.insert(0, 'ducati')
+print(motorcycles)
+
+In this example, the code at u inserts the value 'ducati' at the beginning
+of the list. The insert() method opens a space at position 0 and stores
+the value 'ducati' at that location. This operation shifts every other value
+in the list one position to the right:
+
+['ducati', 'honda', 'yamaha', 'suzuki']
+
+
+            Removing Elements from a List
+
+Removing an Item Using the del Statement
+
+It removed by the index id.
+
+motorcycles = ['honda', 'yamaha', 'suzuki']
+print(motorcycles)
+del motorcycles[0]
+print(motorcycles)
+
+
+Removing an Item Using the pop() Method
+
+It removes and returns the removed item in a list.
+
+In a web application, you might want to remove a user from a list of active members
+and then add that user to a list of inactive members.
+
+
+motorcycles = ['honda', 'yamaha', 'suzuki']
+print(motorcycles)
+popped_motorcycle = motorcycles.pop()
+print(motorcycles)
+print(popped_motorcycle)
+
+['honda', 'yamaha', 'suzuki']
+['honda', 'yamaha']
+suzuki
+
+Popping Items from any Position in a List
+
+first_owned = motorcycles.pop(0)
+print('The first motorcycle I owned was a ' + first_owned.title() + '.')
+
+The first motorcycle I owned was a Honda.
+
+Removing an Item by Value
+
+
+motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
+print(motorcycles)
+motorcycles.remove('ducati')
+print(motorcycles)
+
+
+['honda', 'yamaha', 'suzuki', 'ducati']
+['honda', 'yamaha', 'suzuki']
+
+
 
