@@ -86,6 +86,7 @@ popped_motorcycle = motorcycles.pop()
 print(motorcycles)
 print(popped_motorcycle)
 
+o/p:
 ['honda', 'yamaha', 'suzuki']
 ['honda', 'yamaha']
 suzuki
@@ -95,6 +96,7 @@ Popping Items from any Position in a List
 first_owned = motorcycles.pop(0)
 print('The first motorcycle I owned was a ' + first_owned.title() + '.')
 
+o/p:
 The first motorcycle I owned was a Honda.
 
 Removing an Item by Value
@@ -105,9 +107,74 @@ print(motorcycles)
 motorcycles.remove('ducati')
 print(motorcycles)
 
-
+o/p:
 ['honda', 'yamaha', 'suzuki', 'ducati']
 ['honda', 'yamaha', 'suzuki']
+
+
+Sorting in List
+
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+cars.sort()
+print(cars)
+
+o/p:
+['audi', 'bmw', 'subaru', 'toyota']
+
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+cars.sort(reverse=True)
+print(cars)
+
+o/p:
+['toyota', 'subaru', 'bmw', 'audi']
+
+
+
+Sorting a List Temporarily with the sorted() Function also support reverse=True parameter
+
+print("Here is the original list:")
+print(cars)
+print("\nHere is the sorted list:")
+print(sorted(cars))
+print("\nHere is the original list again:")
+print(cars)
+
+o/p:
+
+Here is the original list:
+['bmw', 'audi', 'toyota', 'subaru']
+Here is the sorted list:
+['audi', 'bmw', 'subaru', 'toyota']
+Here is the original list again:
+['bmw', 'audi', 'toyota', 'subaru']
+
+
+          Printing a List in Reverse Order (No alphabetical only the index order)
+
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+print(cars)
+cars.reverse()
+print(cars)
+Notice that reverse() doesn’t sort backward alphabetically; it simply
+reverses the order of the list:
+
+o/p:
+['bmw', 'audi', 'toyota', 'subaru']
+['subaru', 'toyota', 'audi', 'bmw']
+
+
+          Finding the Length of a List
+
+
+>>> cars = ['bmw', 'audi', 'toyota', 'subaru']
+>>> len(cars)
+4
+
+Python counts the items in a list starting with one, so you shouldn’t run into any offby-
+one errors when determining the length of a list.
+
+
+                Chapter 4         Working with Lists
 
 
 
